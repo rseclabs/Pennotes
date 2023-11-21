@@ -12,7 +12,8 @@ Set-MpPreference -DisableScriptScanning 1 -ErrorAction SilentlyContinue
 Set-MpPreference -DisableRealtimeMonitoring 1 -ErrorAction SilentlyContinue
 Set-MpPreference -LowThreatDefaultAction Allow -ErrorAction SilentlyContinue
 Set-MpPreference -ModerateThreatDefaultAction Allow -ErrorAction SilentlyContinue
-Set-MpPreference -HighThreatDefaultAction Allow -ErrorAction SilentlyContinue```
+Set-MpPreference -HighThreatDefaultAction Allow -ErrorAction SilentlyContinue
+```
 The following will turn it back on.
 ```Set-MpPreference -DisableArchiveScanning 0 -ErrorAction SilentlyContinue
 Set-MpPreference -DisableBehaviorMonitoring 0 -ErrorAction SilentlyContinue
@@ -26,8 +27,10 @@ Set-MpPreference -DisableScriptScanning 0 -ErrorAction SilentlyContinue
 Set-MpPreference -DisableRealtimeMonitoring 0 -ErrorAction SilentlyContinue
 Set-MpPreference -LowThreatDefaultAction Block -ErrorAction SilentlyContinue
 Set-MpPreference -ModerateThreatDefaultAction Block -ErrorAction SilentlyContinue
-Set-MpPreference -HighThreatDefaultAction Block -ErrorAction SilentlyContinue```
+Set-MpPreference -HighThreatDefaultAction Block -ErrorAction SilentlyContinue
+```
 
 The other way to do this is to revomve the Definitions File. This should disable Windows Defenders ability to detect anything.
 
-```C:\Program Files\Windows Defender\MpCmdRun.exe -RevoveDefinitions```
+```C:\Program Files\Windows Defender\MpCmdRun.exe -RevoveDefinitions
+```
