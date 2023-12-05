@@ -1,7 +1,7 @@
 # GoWitness
 Scanning
 ```
-gowitness scan --cidr 0.0.0.0/0 --threads 20
+gowitness scan --cidr x.x.x.x/xx --threads 20
 ```
 Start the report server
 ```
